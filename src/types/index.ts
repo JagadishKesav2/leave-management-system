@@ -1,3 +1,5 @@
+import { LEAVE_TYPE } from "@/constants";
+
 export type ToastState = {
   message: string | null;
   type: "success" | "error" | null;
@@ -10,18 +12,19 @@ export type JWTPayload = {
 };
 
 export type UserT = {
-    email: string;
-    password: string;
-    name: string;
-    role: string;
-    phone: number;
-    address: string;
-}
+  email: string;
+  password: string;
+  name: string;
+  role: string;
+  phone: number;
+  address: string;
+};
+
+export type LeaveTypeT = (typeof LEAVE_TYPE)[number]["value"]
 
 export type LeaveRequestT = {
-    id: number;
-    name: string;
-    leaveType: "Sick" | "Casual" | "Earned and Paid";
-    startDate: string;
-    endDate: string;
-  };
+  name: string;
+  leaveType: LeaveTypeT;
+  startDate: Date | string;
+  endDate: Date | string;
+};
