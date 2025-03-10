@@ -3,7 +3,16 @@ import { Dashboard } from "./pages/Dashboard";
 import { useAuth } from "./hooks/useAuth";
 import { Login } from "./pages/Login";
 import { DashboardLayout } from "./layout/DashboardLayout";
-import { DASHBOARD, HOME, LEAVE_REQ_FORM, LEAVE_REQUESTS, LOGIN, NOT_FOUND } from "./constants/routes";
+import {
+  DASHBOARD,
+  HOME,
+  LEAVE_REQ_FORM,
+  LEAVE_REQUESTS,
+  LOGIN,
+  NOT_FOUND,
+} from "./constants/routes";
+import { LeaveForm } from "./features/LeaveForm";
+import { LeaveRequests } from "./features/LeaveRequests";
 
 const PrivateRoutes = () => {
   const token = useAuth();
@@ -37,7 +46,7 @@ export const AppRoutes = () =>
       children: [
         {
           index: true,
-          element: <Dashboard />,
+          element: <LeaveForm />,
         },
       ],
     },
@@ -47,7 +56,7 @@ export const AppRoutes = () =>
       children: [
         {
           index: true,
-          element: <Dashboard />,
+          element: <LeaveRequests />,
         },
       ],
     },
