@@ -1,0 +1,18 @@
+[
+    {
+        "email": "jagadish@admin.com",
+        "password": "admin",
+        "name": "Jagadish",
+        "role": "admin",
+        "phone": 1234567890,
+        "address": "Bangalore"
+    },
+    {
+        "email": "saurab@admin.com",
+        "password": "admin",
+        "name": "Saurab",
+        "role": "admin",
+        "phone": 1234567890,
+        "address": "Bangalore"
+    }
+]

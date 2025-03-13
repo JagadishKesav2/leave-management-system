@@ -1,0 +1,14 @@
+[
+    {
+        "name": "John Doe",
+        "leaveType": "Sick",
+        "startDate": "11/03/2025",
+        "endDate": "12/03/2025"
+    },
+    {
+        "name": "John Smith",
+        "leaveType": "Casual",
+        "startDate": "12/03/2025",
+        "endDate": "12/03/2025"
+    }
+]
